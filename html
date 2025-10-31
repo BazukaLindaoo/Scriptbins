@@ -1,33 +1,16 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Redirecionando…</title>
-    <!-- Meta refresh como fallback -->
-    <meta http-equiv="refresh" content="0;url=https://scriptsbinsauth.pages.dev/dashboard" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=https://scriptsbinsauth.pages.dev/dashboard" />
     <script>
-      // Redirecionamento imediato via JavaScript (mais confiável em muitos navegadores)
-      (function() {
-        try {
-          window.location.replace('https://scriptsbinsauth.pages.dev/dashboard');
-        } catch (e) {
-          window.location.href = 'https://scriptsbinsauth.pages.dev/dashboard';
-        }
-      })();
+      window.onload = function () {
+        window.location.href = "https://scriptsbinsauth.pages.dev/dashboard";
+      };
     </script>
-    <style>
-      /* Estilo mínimo caso alguém abra a página diretamente */
-      html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
-      .center{height:100%;display:flex;align-items:center;justify-content:center;flex-direction:column;color:#333}
-      a{color:inherit;text-decoration:underline}
-    </style>
+    <title>Redirecionando...</title>
   </head>
   <body>
-    <div class="center">
-      <h1>Redirecionando...</h1>
-      <p>Se você não for redirecionado automaticamente, <a href="https://scriptsbinsauth.pages.dev/dashboard">clique aqui</a>.</p>
-    </div>
+    <p>Redirecionando... Caso não funcione, <a href="https://scriptsbinsauth.pages.dev/dashboard">clique aqui</a>.</p>
   </body>
 </html>
